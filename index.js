@@ -1,5 +1,64 @@
 /* Your Code Here */
 
+function createEmployeeRecord(array) {
+    let initialRecord = {}
+    for (i=0 ; i<array.length; i++) {
+        initialRecord[i] = elem[i]
+    }
+
+    return initialRecord;
+
+}
+
+
+
+function createEmployeeRecords(array) {
+    let newRecord = [];
+    let doing = createEmployeeRecord(array).stringify;
+    newRecord = [...doing]
+    return doing;
+    
+}
+
+function createTimeOutEvent(date){
+    let start = date.split()
+    let newArr = []
+    for (i=0 ; i<start.length; i++) {
+        newArr[i] = start[i]
+    }
+    let newObjes = {...newArr}
+    return newObjes;
+
+}
+
+function createTimeInEvent(date){
+    let start = date.split()
+    let newArr = []
+    for (i=0 ; i<start.length; i++) {
+        newArr[i] = start[i]
+    }
+    let newObjes = {...newArr}
+    return newObjes;
+
+}
+
+function hoursWorkedOnDate(date) {
+    let start = date.split()
+    let time = createTimeOutEvent(date) - createTimeInEvent(date)
+    return time;
+}
+
+function wagesEarnedOnDate(date){
+    let amountOwed;
+    let pay = hoursWorkedOnDate(date) * amountOwed
+    return pay;
+}
+
+
+
+
+
+
 /*
  We're giving you this function. Take a look at it, you might see some usage
  that's new and different. That's because we're avoiding a well-known, but
